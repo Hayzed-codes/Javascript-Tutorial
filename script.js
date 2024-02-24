@@ -5,10 +5,10 @@
 
 // let i;
 
-// for (i = 0; i < 5; i++) {
-//     let p = 10
-//     console.log(i + p);
-// }
+for (i = 0; i < 5; i++) {
+    let p = 10
+    console.log(i + p);
+}
 
 // console.log(i);
 
