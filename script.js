@@ -99,3 +99,9 @@ for (let index = 0; index < num; index++) {
     
     console.log(index)
 }
+
+// Checking for a leap year
+// CONDITIONS:
+// The year must be divisible by 4 without any reminder
+// The year divided by 100 should have a non-zero remainder
+//   If divided by 100  gives no remainder, then divided by 400  should give a remainder
