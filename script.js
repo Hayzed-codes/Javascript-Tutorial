@@ -124,27 +124,32 @@ alert(answer)
 
 // writing a program or a function that prints 1 - 100 and,  check and  print FIZZ , BUZZ and FIZZBUZZ for multiples of 3, 5 and (3 and 5)
 
-let i;
+// let i;
 let result = [];
 
 const printNums = () => {
     for (i = 1; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 !== 0) {
+    if ((i % 3 === 0 && i % 5 !== 0) || (i  % 3 !== 0 && i % 5 !== 0 )) {
         result.push("FIZZ");
     }
-    else if (i % 5 === 0) {
+    else if ((i % 5 === 0 && i % 3 !== 0) || (i  % 3 !== 0 && i % 5 !== 0 )) {
         result.push("BUZZ");
     }
-    else if (i % 3 === 0 && i % 5 === 0) {
-        result.push("FIZZBUZZ");
+      else if (i % 5 === 0 && i % 3 === 0) {
+
+      result.push("FIZZBUZZ");
     }
     else {
         result.push(i);
     }
-
+    
 }
 return result;
 }
 
 console.log(printNums());
+
+console.log(i);
+
+
 
