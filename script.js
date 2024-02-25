@@ -5,10 +5,6 @@
 
 // let i;
 
-for (i = 0; i < 5; i++) {
-    let p = 10
-    console.log(i + p);
-}
 
 // console.log(i);
 
@@ -45,15 +41,15 @@ console.log(a)
 
 
 // AND OPERATOR
-let result;
+let results;
 let age = 30;
 
 if (age > 20 && age < 30) {
-    result = age + 50;
+    results = age + 50;
 }else {
-    result = age;
+    results = age;
 }
-console.log(result)
+console.log(results)
 
 
 // OR OPERATOR
@@ -87,10 +83,10 @@ else {
 // While Loop
 
 let num = 5;
-let i = 0;
-while (i < num) {
-    i++;
-    console.log(i);
+let p = 0;
+while (p < num) {
+    p++;
+    console.log(p);
 }
 
 // FOR LOOP
@@ -104,7 +100,7 @@ for (let index = 0; index < num; index++) {
 // CONDITIONS:
 // The year must be divisible by 4 without any reminder
 // The year divided by 100 should have a non-zero remainder
-//   If divided by 100  gives no remainder, then divided by 400  should give no remainder
+// If divided by 100  gives no remainder, then divided by 400 should give no remainder
 
 
 const year = prompt('Enter year');
@@ -124,3 +120,31 @@ const checkLeap = (year)=> {
 const answer = checkLeap(year);
 alert(answer)
 // console.log(answer);
+
+
+// writing a program or a function that prints 1 - 100 and,  check and  print FIZZ , BUZZ and FIZZBUZZ for multiples of 3, 5 and (3 and 5)
+
+let i;
+let result = [];
+
+const printNums = () => {
+    for (i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 !== 0) {
+        result.push("FIZZ");
+    }
+    else if (i % 5 === 0) {
+        result.push("BUZZ");
+    }
+    else if (i % 3 === 0 && i % 5 === 0) {
+        result.push("FIZZBUZZ");
+    }
+    else {
+        result.push(i);
+    }
+
+}
+return result;
+}
+
+console.log(printNums());
+
